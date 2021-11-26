@@ -360,11 +360,11 @@ return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a
 }
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = kurr.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© ZYS BOT_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = kurr.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_ZYS BOT_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              kurr.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = kurr.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/JI25LDtPW784GAZoRD9fW9', "groupName": `${NamaBot}`, "footerText": "*_© ZYS BOT_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = kurr.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/JI25LDtPW784GAZoRD9fW9', "groupName": `${NamaBot}`, "footerText": "*_ZYS BOT_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             kurr.relayWAMessage(grup)
         }
 		idttt = []
@@ -1276,7 +1276,7 @@ if (!settings.autorecording) {
 kurr.updatePresence(from, Presence.recording)
 }
 if (budy.startsWith('kurr')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© KurrXd_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
+sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*_© ZYS_*", [{buttonId: 'igm', buttonText: {displayText: 'Instagram'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftrol, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
 reply('http://instagram.com/kurrsadboy')
@@ -1347,9 +1347,7 @@ reply('http://youtube.com/c/KurrXd')
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
-					const latensyi = speed() - timestampi
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+					const latensyi = speed() - timestampi                
 runtime = process.uptime()
                 nomor = 1
                 stod = `${sender}`
@@ -1746,7 +1744,7 @@ runtime = process.uptime()
 冬 *$*
 │
 ─❒ OTHER / FUN
-冬 ${prefix}quotes
+
 冬 ${prefix}meme
 冬 ${prefix}darkjoke
 冬 ${prefix}rate
@@ -1772,9 +1770,9 @@ runtime = process.uptime()
 ─❒ SOUND MENU
 冬 ${prefix}sound1 - 冬 ${prefix}sound75
 
-𝘘𝘜𝘖𝘛𝘌𝘚  : ${quotes}
+
 └─────────────────❒`
-sendButLocation(from, `${menu}`, "*_© ZYS BOT_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`store`,buttonText:{displayText:'𝙨𝙩𝙤𝙧𝙚 𝙢𝙚𝙣𝙪'},type:1},{buttonId:`sc`,buttonText:{displayText:'SC'},type:1},{buttonId:`catalog`,buttonText:{displayText:'CATALOG MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_ZYS BOT_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`store`,buttonText:{displayText:'𝙨𝙩𝙤𝙧𝙚 𝙢𝙚𝙣𝙪'},type:1},{buttonId:`sc`,buttonText:{displayText:'SC'},type:1},{buttonId:`catalog`,buttonText:{displayText:'CATALOG MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -1921,15 +1919,13 @@ case 'menu':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
-					const latensyi = speed() - timestampi
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+					const latensyi = speed() - timestampi                
 runtime = process.uptime()
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = `╭─❒ 「 KurzBotz Assistan Info 」
+       menu = `╭─❒ 「 ZYS BOT Info 」
 *冬TOTAL MENU :464*
 *冬OWNER: ${NamaOwner}*
 *冬NOMER OWNER: ${NomorOwner}*
@@ -1938,8 +1934,8 @@ runtime = process.uptime()
 *冬prefix : Multi Prefix* 
 *冬runtime : ${waktu(runtime)}* 
 
-𝘘𝘜𝘖𝘛𝘌𝘚  : ${quotes}`
-sendButLocation(from, `${menu}`, "*_© ZYS BOT_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+`
+sendButLocation(from, `${menu}`, "*_ZYS BOT_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`allmenu`,buttonText:{displayText:'ALL MENU'},type:1},{buttonId:`rules`,buttonText:{displayText:'RULES'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2020,8 +2016,7 @@ case 'bego':
         break
 case 'catalog': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+
                 nama = ' CATALOG MENU '
        ownerJid = "6281220670449@s.whatsapp.net"
                 nomor = 1
@@ -2411,7 +2406,6 @@ quotes = quotesnya.result.quotes
 冬 *$*
 │
 ─❒ OTHER / FUN
-冬 ${prefix}quotes
 冬 ${prefix}meme
 冬 ${prefix}darkjoke
 冬 ${prefix}rate
@@ -2437,7 +2431,6 @@ quotes = quotesnya.result.quotes
 ─❒ SOUND MENU
 冬 ${prefix}sound1 - 冬 ${prefix}sound75
 
-𝘘𝘜𝘖𝘛𝘌𝘚  : ${quotes}
 └─────────────────❒`
 if(menuall == false){
    //Masih langka
@@ -2445,14 +2438,14 @@ anu = kurr.prepareMessageFromContent(from,{
 					"productMessage": {
 						"product": {
 								"productImage": {
-								 "url": "https://mmg.whatsapp.net/d/f/Ahb4wGLv5WRRHNDjX0oscWGguHSUTuBXrBLUDCzO0_0Z.enc",
+								 "url": "https://mmg.whatsapp.net/d/f/Agw9Wz6czHdmj-vw5HUqoZTq3ymrxABas8OKFs4rwcln.enc",
 						"mimetype": "image/jpeg",
-						"fileSha256": "LxreCgbGFLCuMD0STZaaTDsyHuNg/s06FHXg9vm+qmo=",
-						"fileLength": "109459",
+						"fileSha256": "4j9HRgt4ep7oG49GrUA1UYGv1oq2vN24adBghczb+CU=",
+						"fileLength": "133614",
 						"height": 1280,
-						"width": 1274,
-						"mediaKey": "1SBZlmQxZQR+qZBVlBR5RcvDQNfYSRiYPT8uWDaEzLY=",
-						"fileEncSha256": "V6JNiialXPUGHn1j7Tz7YkXpU+QzOkBvOV7GZL2PRS4=",
+						"width": 1279,
+						"mediaKey": "bx3lbcS0+/nZxkL2kJ29ND7cQNCW/Ao7AkrxzNzGvi0=",
+						"fileEncSha256": "dDNB+/0ZuRfhQc5e7vg3mQqsl4QtzFdD/ujADOdwyF4=",
 						"jpegThumbnail": fs.readFileSync("./logonya.jpeg")
                                 },
                             "productId": "9999999",
@@ -2489,24 +2482,26 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
                 const timestampi = speed();
-					const latensyi = speed() - timestampi
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+					const latensyi = speed() - timestampi                
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
        menu = `*#WTS*
 
-READY SEWABOT(MASUK GC) 
+STORE
 
-1 BULAN :5K
-PERMANEN :20K
+SEWA BOT 1 BULAN :5K
+SEWA PERMANEN :20K
 
-MINAT? : https://wa.me/6289512497753/
+*BOT TIDAK ON 24JAM*
+
+📥 BERMINAT ? HUBUNGI :
+https://wa.me/6289512497753
+
 
 *MATURSUWUN MONGGO DI LARISI*`
-sendButLocation(from, `${menu}`, "*_© ZYS BOT_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+sendButLocation(from, `${menu}`, "*_ZYS BOT_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 else if(menusimpel = true){
         stod = `${sender}`
@@ -2547,10 +2542,11 @@ case 'rules':
 fill =`𝙍𝙐𝙇𝙀𝙎 𝘽𝙊𝙏𝙕
 － JANGAN SPAM BOT
    LANGGAR BANNED
-－ BOT TIDAK ON 24JAM      
+       
 － JANGAN CALL/VC BOT
    LANGGAR BLOK BANNED
    
+
    `
 menu =`KurzBotz`
 gbutsan = [
@@ -2578,8 +2574,7 @@ sendEphemeral: false,
 else if(menusimpel = true){
 const timestampi = speed();
 					const latensyi = speed() - timestampi
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+                
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -2592,9 +2587,8 @@ quotes = quotesnya.result.quotes
    LANGGAR BLOK BANNED
        
        
-ɢɪᴛʜᴜʙ ᴏᴡɴᴇʀ:-
-ʸᵒᵘᵗᵘᵇᵉ ᵒʷⁿᵉʳ:https:-`
-sendButLocation(from, `${menu}`, "*_© ZYS BOT_*", {jpegThumbnail:logonya,name:""}, [{buttonId:`menu`,buttonText:{displayText:'SIAP OM'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+
+sendButLocation(from, `${menu}`, "*_ZYS BOT_*", {jpegThumbnail:logonya,name:""}, [{buttonId:`menu`,buttonText:{displayText:'SIAP OM'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 break
 case 'verify':
@@ -2620,7 +2614,7 @@ mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const sendBtnVeryy = {
 imageMessage: mhan.message.imageMessage,
 contentText:`${jancok}`,
-footerText:'Terimakasih Sudah Mendaftar\n*_©ZYS_*', 
+footerText:'Terimakasih Sudah Mendaftar\n*_© kurr_*', 
 buttons: gbutsan,
 headerType: 4
 }
@@ -2672,13 +2666,6 @@ break
 					buffer1 = await getBuffer(anu.result.results)
 					kurr.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./logonya.jpeg')})
 					break				
-      case 'quotes':
-     ini_result = await fetchJson('https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx')
-     get_result = ini_result.result
-        ini_txt = `${get_result.quotes}\n\n`
-       ini_txt += `~ ${get_result.author}`
-     reply(ini_txt)
-     break					
 					//menu haram
 					case 'ass': 
 					case 'ahegao': 
@@ -3669,8 +3656,8 @@ case 'chiisaihentai':
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=KurrXd`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await kurr.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
-              contentText:`Subrek yt : KurrXd`,buttons,headerType:4}
+              buttonsMessage = {footerText:'✗✗✗ ZYS', imageMessage: imageMsg,
+              contentText:`nih ngabb`,buttons,headerType:4}
               prep = await kurr.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               kurr.relayWAMessage(prep)
               break
@@ -3680,8 +3667,8 @@ case 'chiisaihentai':
               buff = await getBuffer(`https://api.lolhuman.xyz/api/meme/darkjoke?apikey=KurrXd`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await kurr.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
-              contentText:`Subrek yt : KurrXd`,buttons,headerType:4}
+              buttonsMessage = {footerText:'✗✗✗ ZYS', imageMessage: imageMsg,
+              contentText:`nih ngabb`,buttons,headerType:4}
               prep = await kurr.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               kurr.relayWAMessage(prep)
                     break
@@ -3730,8 +3717,8 @@ case 'bj':
                buff = await getBuffer(`https://api.lolhuman.xyz/api/random2/${command}?apikey=KurrXd`)
                 buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await kurr.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
-              contentText:`Subrek yt : KurrXd`,buttons,headerType:4}
+              buttonsMessage = {footerText:'✗✗✗ ZYS', imageMessage: imageMsg,
+              contentText:`nih ngabb`,buttons,headerType:4}
               prep = await kurr.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               kurr.relayWAMessage(prep)
         
@@ -3747,7 +3734,7 @@ case 'loli':
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = ( await kurr.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'✗✗✗ ZYS', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await kurr.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               kurr.relayWAMessage(prep)
@@ -3790,7 +3777,7 @@ case 'blackpink':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/textprome/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
-                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih ngabb`, quoted : ftrol})
                     })
                     break
                 case 'pornhub':
@@ -3808,7 +3795,7 @@ case 'blackpink':
                     txt1 = args[0]
                     txt2 = args[1]
                     getBuffer(`https://api.lolhuman.xyz/api/textprome2/${command}?apikey=KurrXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih ngabb`, quoted : ftrol})
                     })
                     break
 case 'neko':
@@ -3821,7 +3808,7 @@ case 'neko':
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=KurrXd`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await kurr.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'✗✗✗ ZYS', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await kurr.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               kurr.relayWAMessage(prep)
@@ -3834,7 +3821,7 @@ case 'neko':
               buff = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=KurrXd`)
               buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await kurr.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
-              buttonsMessage = {footerText:'✗✗✗ KurrXd', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'ZYS', imageMessage: imageMsg,
               contentText:`klik Next untuk ke gambar selanjut nya`,buttons,headerType:4}
               prep = await kurr.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               kurr.relayWAMessage(prep)
@@ -3870,7 +3857,7 @@ case 'neko':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Kurr Xd`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
-                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih ngabb`, quoted : ftrol})
                     })
                     break
                 case 'arcade8bit':
@@ -3881,7 +3868,7 @@ case 'neko':
                     txt1 = args[0]
                     txt2 = args[1]
                     getBuffer(`https://api.lolhuman.xyz/api/photooxy2/${command}?apikey=KurrXd&text1=${txt1}&text2=${txt2}`).then((gambar) => {
-                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol})
+                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih ngabb`, quoted : ftrol})
                     })
                     break
 
@@ -3920,7 +3907,7 @@ case 'neko':
                     if (args.length == 0) return reply(`Example: ${prefix + command} kurr xd`)
                     ini_txt = args.join(" ")
                     getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=KurrXd&text=${ini_txt}`).then((gambar) => {
-                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `Subrek yt : KurrXd`, quoted : ftrol}) 
+                        kurr.sendMessage(from, gambar, image, {thumbnail: Buffer.alloc(0), caption: `nih ngabb`, quoted : ftrol}) 
                     })
                     break
 
@@ -4718,7 +4705,7 @@ await kurr.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftrol}
 punten = [{buttonId: 'antilink off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antilink on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*_©kurr_*',
+    footerText: '*_©ZYS_*',
     buttons: punten,
     headerType: 1
 }
